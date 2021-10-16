@@ -8,7 +8,7 @@ import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
 import net.minecraft.util.Identifier;
 
-public final class MyComponents implements EntityComponentInitializer {
+public final class Components implements EntityComponentInitializer {
     public static final ComponentKey<AbilityComponent> ABILITIES = ComponentRegistryV3.INSTANCE.getOrCreate(new Identifier(CardinalTest.MODID, "abilitypls"), AbilityComponent.class);
 
     @Override

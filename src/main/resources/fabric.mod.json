@@ -19,7 +19,7 @@
       "com.jasonjat.cardinaltest.CardinalTest"
     ],
     "cardinal-components-entity": [
-      "com.jasonjat.cardinaltest.cca.MyComponents"
+      "com.jasonjat.cardinaltest.cca.Components"
     ]
   },
   "mixins": [

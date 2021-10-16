@@ -8,6 +8,6 @@ import net.fabricmc.api.Environment;
 public class CardinalTestClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-
+        Keybinds.register();
     }
 }
