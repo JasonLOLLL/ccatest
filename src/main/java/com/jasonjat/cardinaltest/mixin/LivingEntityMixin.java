@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LivingEntity.class)
-public class LivingEntityMixin extends Entity {
+public abstract class LivingEntityMixin extends Entity {
     public LivingEntityMixin(EntityType<?> entityType, World world) {
         super(entityType, world);
     }
@@ -31,25 +31,5 @@ public class LivingEntityMixin extends Entity {
 //            String result = unlockedTry ? "Success adding a new entity called " + entityType.toString() : "This entity already exists within";
 //            System.out.println(result);
         }
-    }
-
-    @Override
-    public void initDataTracker() {
-
-    }
-
-    @Override
-    public void readCustomDataFromNbt(NbtCompound nbt) {
-
-    }
-
-    @Override
-    public void writeCustomDataToNbt(NbtCompound nbt) {
-
-    }
-
-    @Override
-    public Packet<?> createSpawnPacket() {
-        return null;
     }
 }
