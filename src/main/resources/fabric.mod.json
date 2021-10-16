@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ct",
+  "version": "${version}",
+  "name": "Cardinal Test",
+  "description": "testing cardinal components",
+  "authors": [
+    "jasonjat"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cardinal-test/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.jasonjat.cardinaltest.client.CardinalTestClient"
+    ],
+    "main": [
+      "com.jasonjat.cardinaltest.CardinalTest"
+    ],
+    "cardinal-components-entity": [
+      "com.jasonjat.cardinaltest.cca.MyComponents"
+    ]
+  },
+  "mixins": [
+    "cardinal-test.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.1",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  },
+  "custom": {
+    "cardinal-components": [
+      "ct:abilitypls"
+    ]
+  }
+}
